@@ -1,0 +1,95 @@
+.final {
+  width: 100%;
+  background-color: var(--cor-12);
+}
+
+.last {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  padding: 50px;
+}
+
+.contact {
+  color: white;
+}
+
+.contact h1 {
+  font-family: var(--font-2);
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+}
+
+.contact ul {
+  list-style-type: none;
+}
+
+.contact ul li {
+  font-size: 1.1rem;
+  font-family: var(--font-1);
+  margin-top: 20px;
+  color: var(--cor-5);
+}
+
+.contact ul li a {
+  text-decoration: none;
+  color: var(--cor-5);
+}
+
+.contact a:hover {
+  color: var(--cor-1);
+}
+
+.social ul {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.info {
+  color: white;
+}
+
+.info h2 {
+  font-family: var(--font-2);
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+}
+
+.info ul {
+  list-style-type: none;
+  color: var(--cor-5);
+}
+
+.info ul li {
+  margin-top: 15px;
+}
+
+.info ul li a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-family: var(--font-1);
+  color: var(--cor-5);
+}
+
+.info a:hover {
+  color: var(--cor-1);
+}
+
+.direitos {
+  margin-top: 80px;
+  font-size: 1.1rem;
+  font-family: var(--font-1);
+  color: var(--cor-5);
+}
+
+.logo2 {
+  max-width: 140px;
+  height: 30px;
+}

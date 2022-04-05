@@ -1,0 +1,131 @@
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 120px;
+  max-width: 1280px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin: 0 auto;
+}
+
+.nimbus1 {
+  position: relative;
+}
+
+.nimbus1 img {
+  width: 100%;
+  max-width: 580px;
+  margin: 0 auto;
+  border-radius: 4px;
+  grid-template-columns: 1fr;
+}
+
+.nimbus1::after {
+  content: "R$ 3999";
+  width: 60px;
+  height: 30px;
+  top: 20px;
+  right: 0px;
+  border-radius: 4px 0px 0px 4px;
+  display: inline-block;
+  padding: 8px 8px 0px 8px;
+  font-size: 1rem;
+  background-color: var(--cor-12);
+  font-family: var(--font-2);
+  color: white;
+  position: absolute;
+}
+
+.bicicletas {
+  position: relative;
+  grid-template-columns: 1fr;
+}
+
+.bicicletas h2 {
+  font-family: var(--font-2);
+  color: var(--cor-12);
+  font-size: 2rem;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.bicicletas h2::before {
+  content: "";
+  width: 15px;
+  height: 7px;
+  top: 3px;
+  background-color: var(--cor-p2);
+  position: absolute;
+}
+
+.bicicletas p {
+  font-family: var(--font-2);
+  max-width: 60ch;
+  line-height: 1.5rem;
+}
+
+.sub-menu {
+  position: relative;
+  padding: 30px;
+}
+
+.icons {
+  margin-top: 3px;
+  left: -5px;
+  height: 25px;
+  display: block;
+  position: absolute;
+}
+
+.sub-menu ul {
+  list-style-type: none;
+}
+
+.sub-menu li {
+  font-family: var(--font-1);
+  font-size: 1.2rem;
+  margin-top: 12px;
+  color: var(--cor-12);
+}
+
+.btn {
+  display: grid;
+  justify-content: end;
+}
+
+.botao {
+  width: 200px;
+  height: 50px;
+  background: var(--cor-p1);
+  color: var(--cor-12);
+  font-family: var(--font-1);
+  font-size: 1.1rem;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.botao:hover {
+  background-color: var(--cor-p2);
+}
+
+/* detail */
+
+.second-bike {
+  background: linear-gradient(to right, var(--cor-0) 30%, var(--cor-11) 0%);
+}
+
+.second {
+  color: var(--cor-5);
+}
+
+#second {
+  color: var(--cor-5);
+}
+
+.second h2 {
+  color: var(--cor-0);
+}

@@ -1,0 +1,100 @@
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 50px 20px;
+  }
+
+  .container h1 {
+    font-size: 1.1rem;
+  }
+  .container h2 {
+    font-size: 3rem;
+  }
+
+  .main {
+    gap: 30px;
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 792px) {
+  /* header */
+
+  .container {
+    padding: 40px 20px;
+  }
+
+  .container h1 {
+    text-transform: lowercase;
+    font-size: 1rem;
+  }
+  .container h2 {
+    font-size: 2rem;
+  }
+
+  /* bikes */
+
+  .main {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 30px;
+    gap: 20px;
+  }
+
+  .nimbus1 img {
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 4px;
+    grid-template-columns: 1fr;
+  }
+
+  .bicicletas h2 {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  .bicicletas p {
+    max-width: 100ch;
+  }
+
+  .second-bike {
+    background: var(--cor-11);
+  }
+
+  /* contact */
+
+  .logo2 {
+    display: none;
+  }
+
+  .last {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .menu li a {
+    font-size: 1rem;
+  }
+
+  .last {
+    grid-template-columns: 1fr;
+    padding: 25px;
+  }
+
+  .contact h1 {
+    font-size: 1.3rem;
+    margin-top: 30px;
+    margin-bottom: 35px;
+  }
+
+  .contact ul li {
+    margin-top: 15px;
+  }
+
+  .info h2 {
+    font-size: 1.3rem;
+    margin-top: 30px;
+    margin-bottom: 35px;
+  }
+}
