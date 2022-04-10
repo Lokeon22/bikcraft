@@ -1,0 +1,272 @@
+.texto-bg {
+  background-color: black;
+  color: white;
+  box-shadow: inset 0px -120px white;
+}
+
+.introducao > img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.texto-conteudo span {
+  color: var(--cor-p1);
+}
+
+.texto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.texto-conteudo {
+  align-self: end;
+  padding-bottom: 200px;
+}
+
+.texto-conteudo h2 {
+  font-size: 4rem;
+  line-height: 1.125;
+  font-family: var(--font-2);
+  margin-bottom: 32px;
+}
+
+.texto-conteudo p {
+  line-height: 1.5;
+  font-size: 1.5rem;
+  color: var(--cor-5);
+  margin-bottom: 30px;
+  font-family: var(--font-2);
+}
+
+/* mid three-bikes prices */
+
+.mid-bike {
+  max-width: 1280px;
+  position: relative;
+  margin: 0 auto;
+  padding-bottom: 200px;
+}
+
+.mid-bike h2 {
+  font-size: 4rem;
+  font-family: var(--font-2);
+  padding: 40px 80px;
+}
+
+.mid-bike span {
+  color: var(--cor-p1);
+}
+
+.mid-bike ul {
+  display: flex;
+  position: relative;
+  list-style-type: none;
+  gap: 40px;
+}
+
+.mid-bike ul li img {
+  max-width: 100%;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.mid-bike a {
+  text-decoration: none;
+}
+
+.txt {
+  display: flex;
+  align-items: center;
+  font-family: var(--font-2);
+  color: var(--cor-11);
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.txt::before {
+  content: "";
+  width: 12px;
+  height: 8px;
+  margin-right: 8px;
+  display: inline-block;
+  background-color: var(--cor-p1);
+  transition: 0.5s;
+}
+
+.txt:hover:before {
+  width: 25px;
+}
+
+.mid-bike ul li a p {
+  font-size: 1.2rem;
+  color: var(--cor-8);
+  padding-left: 20px;
+}
+
+/* second part */
+
+.tools-texto h2 > span {
+  color: var(--cor-p1);
+}
+
+.bg-tools {
+  background-color: var(--cor-11);
+  box-shadow: inset 0 80px var(--cor-1), inset 0 -80px var(--cor-1);
+}
+
+.second-bg {
+  max-width: 1280px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 0 auto;
+}
+
+.tools-bg > img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tools-texto {
+  padding: 30px;
+  align-self: center;
+}
+
+.tools-texto h1 {
+  padding: 0px 10px;
+  font-family: var(--font-2);
+  font-weight: normal;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  color: var(--cor-6);
+  margin-bottom: 20px;
+}
+
+.tools-texto h2 {
+  padding: 0px 10px;
+  font-family: var(--font-1);
+  color: var(--cor-1);
+  line-height: 3.9rem;
+  font-size: 3.7rem;
+  margin-bottom: 25px;
+}
+
+.descricao-bike {
+  padding: 0px 10px;
+  display: block;
+  font-family: var(--font-1);
+  font-size: 1.3rem;
+  color: var(--cor-5);
+  margin-bottom: 15px;
+}
+
+.tools-texto a {
+  padding: 0px 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: var(--font-1);
+  color: var(--cor-p1);
+}
+
+.tools-texto a:hover {
+  color: var(--cor-3);
+}
+
+.line {
+  padding: 0px 10px;
+  width: 255px;
+  height: 4px;
+  left: 1.6%;
+  background-color: var(--cor-p1);
+  position: relative;
+}
+
+.tools-menu {
+  display: flex;
+  margin-top: 80px;
+}
+
+.tools-menu ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.tools-menu p {
+  padding: 0px 10px;
+  font-size: 1.1rem;
+  font-family: var(--font-1);
+  color: var(--cor-1);
+  margin-bottom: 5px;
+}
+
+.tools-menu span {
+  padding: 0px 10px;
+  display: block;
+  font-family: var(--font-1);
+  font-size: 0.9rem;
+  color: var(--cor-5);
+}
+
+.tools-menu img {
+  padding: 0px 10px;
+  height: 25px;
+}
+
+/* initial parceiros */
+
+.partnes {
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+
+.partnes h2 {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 4rem;
+  font-family: var(--font-2);
+  padding-bottom: 60px;
+}
+
+.partnes h2 > span {
+  color: var(--cor-p1);
+}
+
+.partnes ul {
+  max-width: 1440px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.partnes li {
+  display: flex;
+  padding: 32px;
+  border-left: 2px solid var(--cor-2);
+}
+
+.partnes li:first-child,
+.partnes li:nth-child(5) {
+  border-left: none;
+}
+
+.partnes li:nth-child(n + 5) {
+  border-top: 2px solid var(--cor-2);
+}
+
+.partnes img {
+  max-width: 100%;
+  margin: 0 auto;
+}
