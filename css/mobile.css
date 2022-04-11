@@ -72,6 +72,8 @@
   }
 }
 
+/*page home */
+
 @media screen and (max-width: 600px) {
   .menu li a {
     font-size: 1rem;
