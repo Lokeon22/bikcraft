@@ -1,1 +1,245 @@
+#contato {
+  background: linear-gradient(var(--cor-11) 600px, var(--cor-1) 0px);
+}
 
+.contato {
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+}
+
+.contato-dados,
+.contato-formulario {
+  padding: 60px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.contato-dados {
+  border-radius: 5px 0 0 5px;
+  background: var(--cor-12);
+}
+
+.contato-formulario {
+  background: var(--cor-1);
+}
+
+.contato-dados h2 {
+  font-family: var(--font-2);
+  font-weight: normal;
+  margin-bottom: 60px;
+  color: var(--cor-0);
+}
+
+.contato-endereco {
+  margin-bottom: 32px;
+  padding-left: 28px;
+  background: url(../img/local.svg) no-repeat 0px 2px;
+}
+
+.contato-endereco p {
+  font-family: var(--font-2);
+  color: var(--cor-4);
+  margin-bottom: 8px;
+}
+
+.contato-meios a {
+  display: block;
+  max-width: max-content;
+  text-decoration: none;
+  font-family: var(--font-2);
+  font-style: normal;
+  margin-bottom: 8px;
+  color: var(--cor-4);
+  padding-left: 28px;
+}
+
+.contato-meios a:hover {
+  color: var(--cor-0);
+}
+
+.contato-meios a:first-child {
+  background: url(/img/email.svg) no-repeat 0 2px;
+}
+
+.contato-meios a:nth-child(2) {
+  margin-bottom: 32px;
+}
+
+.contato-meios a:nth-child(3) {
+  background: url(/img/telefone.svg) no-repeat 0 2px;
+  margin-bottom: 60px;
+}
+
+.contato-redes {
+  display: flex;
+  padding-left: 28px;
+  gap: 32px;
+}
+
+/* expandindo coluna com grid */
+
+.form .col-2 {
+  grid-column: span 2;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form label {
+  display: block;
+  font: 600 1rem/1.5 "Poppins", sans-serif;
+  font-weight: normal;
+  margin-bottom: 4px;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form textarea {
+  font: 400 1rem/1.5 "Roboto", sans-serif;
+  background: var(--cor-1);
+  border: 2px solid var(--cor-2);
+  padding: 12px;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  resize: none;
+}
+
+.form input[type="text"]:focus,
+.form input[type="email"]:focus,
+.form textarea:focus {
+  outline: none;
+  border-color: var(--cor-p1);
+  background: var(--cor-0);
+  box-shadow: 0 0 0 2px #fea;
+}
+
+.lojas-locais {
+  max-width: 1200px;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr;
+  box-sizing: border-box;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 80px;
+}
+
+.loja-conteudo-rj,
+.loja-conteudo-sp {
+  box-shadow: 0 1px 3px rgb(0 0 0 / 10%);
+}
+
+.loja-rj img,
+.loja-sp img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 4px 4px 0 0;
+}
+
+.loja-conteudo-rj h3,
+.loja-conteudo-sp h3 {
+  font-weight: 600;
+  font-size: 2rem;
+  font-family: var(--font-2);
+  padding: 10px 20px;
+  margin-bottom: 5px;
+}
+
+.rj-enderecos,
+.sp-enderecos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 15px;
+}
+
+.rj-enderecos a,
+.sp-enderecos a {
+  max-width: max-content;
+  font-family: var(--font-2);
+  color: var(--cor-11);
+  font-weight: normal;
+  text-decoration: none;
+  padding: 10px;
+  border-left: 1px solid rgb(0 0 0 / 7%);
+}
+
+.rj-enderecos span,
+.sp-enderecos span {
+  max-width: max-content;
+  font-family: var(--font-2);
+  color: var(--cor-11);
+  font-weight: normal;
+  text-decoration: none;
+  padding: 10px;
+  border-left: 1px solid rgb(0 0 0 / 7%);
+}
+
+.horarios {
+  display: block;
+  padding: 20px;
+  padding-left: 15px;
+  margin-left: 20px;
+}
+
+.horarios > img {
+  position: relative;
+  top: 4px;
+  left: -6px;
+}
+
+.horarios span {
+  text-decoration: none;
+  font-family: var(--font-2);
+  color: var(--cor-11);
+}
+
+@media screen and (max-width: 792px) {
+  .contato {
+    grid-template-columns: 1fr;
+  }
+
+  .contato-dados,
+  .contato-formulario {
+    padding: 20px;
+  }
+
+  .contato-dados h2 {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+
+  .loja-conteudo-rj h3,
+  .loja-conteudo-sp h3 {
+    font-size: 1.5rem;
+  }
+
+  .rj-enderecos,
+  .sp-enderecos {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .lojas-locais {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr;
+    margin-bottom: 40px;
+  }
+}
