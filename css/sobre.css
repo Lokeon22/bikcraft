@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sobre-bg {
+  background-color: var(--cor-11);
+  padding-bottom: 80px;
+}
+
+.bikes-sobre {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.grid-bikes {
+  display: grid;
+  grid-template-columns: 3fr 3fr;
+}
+
+.bike1 img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.bike2 img,
+.bike3 img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.conteudo-images {
+  display: grid;
+  grid-template-areas:
+    "a a"
+    "b c";
+  gap: 20px;
+}
+
+.bike1 {
+  grid-area: a;
+}
+
+.bike2 {
+  grid-area: b;
+}
+
+.bike3 {
+  grid-area: c;
+}
+
+.conteudo-bikes {
+  padding: 20px;
+}
+
+.conteudo-bikes h2 {
+  font-family: var(--font-1);
+  font-size: 1.4rem;
+  font-weight: normal;
+  color: var(--cor-5);
+  margin-bottom: 25px;
+}
+
+.grid-botao {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 15px;
+}
+
+.grid-botao span {
+  display: grid;
+  grid-template-areas:
+    "a b"
+    "c d";
+  align-items: center;
+  justify-content: start;
+  gap: 0px 8px;
+  font-size: 0.7rem;
+  font-family: var(--font-1);
+  color: var(--cor-6);
+}
+
+.pinf {
+  font-size: 0.9rem;
+  font-family: var(--font-2);
+  color: var(--cor-2);
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
+
+.botao-bike {
+  width: 200px;
+  height: 50px;
+  background: var(--cor-p1);
+  color: var(--cor-12);
+  font-family: var(--font-1);
+  font-size: 1.1rem;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.botao-bike:hover {
+  background-color: var(--cor-p2);
+}
+
+.grid-informacoes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+  gap: 30px;
+}
+
+.info1 h3 {
+  font-weight: normal;
+  font-family: var(--font-1);
+  font-size: 1.1rem;
+  color: var(--cor-2);
+  margin-bottom: 5px;
+}
+
+.info1 p {
+  font-family: var(--font-2);
+  font-size: 1rem;
+  color: var(--cor-5);
+}
+
+.grid-ficha {
+  display: grid;
+  padding: 20px;
+  color: white;
+}
+
+.grid-ficha ul {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 15px;
+}
+
+.grid-ficha ul li {
+  font-family: var(--font-2);
+  font-weight: normal;
+}
+
+/* two bikes mid */
+
+.mid-bike {
+  padding-bottom: 150px;
+}
+
+/* bicicletas texto */
+
+.pedala-bg {
+  background-color: var(--cor-11);
+  box-shadow: inset 0px 120px white;
+}
+
+.sobre-pedala {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.sobre-pedala {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.pedala-logo img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.pedala-texto {
+  color: white;
+  margin-top: 140px;
+  padding: 30px;
+}
+
+.pedala-texto h2 {
+  font-size: 4rem;
+  font-family: var(--font-2);
+  margin-bottom: 20px;
+}
+
+.pedala-texto p {
+  font-size: 1.5rem;
+  font-family: var(--font-2);
+  color: var(--cor-5);
+  margin-bottom: 20px;
+}
+
+.pedala-texto h2 > span {
+  color: var(--cor-p1);
+}

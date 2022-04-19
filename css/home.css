@@ -722,3 +722,12 @@ ul {
     margin-bottom: 60px;
   }
 }
+
+@media screen and (max-width: 330px) {
+  .seguros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    padding: 20px;
+  }
+}

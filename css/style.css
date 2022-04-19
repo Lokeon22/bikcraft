@@ -5,6 +5,8 @@
 @import url(./home.css);
 @import url(./seguros.css);
 @import url(./contato.css);
+@import url(./termos.css);
+@import url(./sobre.css);
 
 * {
   margin: 0;
