@@ -165,9 +165,6 @@
 .sobre-pedala {
   max-width: 1280px;
   margin: 0 auto;
-}
-
-.sobre-pedala {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -198,4 +195,102 @@
 
 .pedala-texto h2 > span {
   color: var(--cor-p1);
+}
+
+@media screen and (max-width: 768px) {
+  .seguros-texto h2 {
+    font-size: 1.7rem;
+  }
+
+  .seguros-texto > p {
+    font-size: 1.2rem;
+  }
+
+  .grid-bikes {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .conteudo-bikes {
+    display: grid;
+    grid-row: 1;
+  }
+
+  .conteudo-bikes h2 {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+  }
+
+  .pinf {
+    font-size: 0.8rem;
+    margin-top: 25px;
+    margin-bottom: 30px;
+  }
+
+  .info1 p {
+    font-size: 0.9rem;
+  }
+
+  .mid-bike {
+    padding-bottom: 100px;
+  }
+
+  .sobre-pedala {
+    grid-template-columns: 1fr;
+  }
+
+  .pedala-bg {
+    background-color: none;
+    box-shadow: none;
+  }
+
+  .pedala-logo {
+    display: grid;
+    padding: 20px;
+    grid-row: 2;
+  }
+
+  .pedala-texto {
+    color: var(--cor-1);
+    margin-top: 10px;
+    padding: 20px;
+  }
+
+  .pedala-texto h2 {
+    font-weight: normal;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .pedala-texto p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .conteudo-images {
+    display: grid;
+    grid-template-areas:
+      "a"
+      "b"
+      "c";
+    padding: 10px;
+  }
+
+  .conteudo-bikes h2 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .grid-informacoes {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 348px) {
+  .grid-botao {
+    grid-template-columns: 1fr;
+  }
 }
